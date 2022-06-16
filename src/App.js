@@ -5,6 +5,7 @@ import Profile from './components/Pages/Profile';
 import Rocket from './components/Pages/Rocket';
 import './App.css';
 import Header from './components/Layout/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
