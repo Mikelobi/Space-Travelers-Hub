@@ -15,20 +15,21 @@ const Missions = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     // @ts-ignore
-    dispatch(getAllMissions());
+    if (missions.length === 0) {
+      dispatch(getAllMissions());
+    }
   }, []);
 
   if (missions.length) {
     return (
       <section className={classes.missionsContainer}>
-        <h2>Missions Page</h2>
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th>Mission Name</th>
-              <th>Mission Description</th>
-              <th>Mission Status</th>
-              <th>Actions</th>
+              <th>Mission</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>&nbsp;</th>
             </tr>
           </thead>
           <tbody>
