@@ -20,7 +20,7 @@
 
 ## Live Link 
 
-- Comming soon
+[Space Travelers](https://mikelobi.github.io/space-travelers-hub/)
 
 ## Built With
 
