@@ -17,18 +17,21 @@ const ListItem = ({
   };
 
   let button;
+  let reservedIcon;
   if (reserved) {
     button = (
-      <button type="button" onClick={() => cancelReserve(id)}>
+      <button type="button" onClick={() => cancelReserve(id)} className="cancel-button">
         Cancel Reservation
       </button>
     );
+    reservedIcon = <span className="reserved-icon">Reserved</span>;
   } else {
     button = (
-      <button type="button" onClick={() => reserve(id)}>
+      <button type="button" onClick={() => reserve(id)} className="reserve-button">
         Reserve Reservation
       </button>
     );
+    reservedIcon = '';
   }
 
   return (
@@ -36,7 +39,11 @@ const ListItem = ({
       <img src={image} alt={name} />
       <div className="list-desc">
         <h2>{name}</h2>
-        <p>{description}</p>
+        <p>
+          {reservedIcon}
+          {' '}
+          {description}
+        </p>
         {button}
       </div>
     </li>

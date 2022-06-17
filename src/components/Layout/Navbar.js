@@ -1,11 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
-  <nav>
-    <Link to="/">Rockets</Link>
-    <Link to="/mission">Missions</Link>
-    <Link to="/profile">My Profile</Link>
+  <nav className="navbar">
+    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+      Rockets
+    </NavLink>
+    <NavLink
+      to="/mission"
+      className={({ isActive }) => (isActive ? 'active' : '')}
+    >
+      Missions
+    </NavLink>
+    <NavLink
+      to="/profile"
+      className={({ isActive }) => (isActive ? 'active' : '')}
+    >
+      My Profile
+    </NavLink>
   </nav>
 );
 

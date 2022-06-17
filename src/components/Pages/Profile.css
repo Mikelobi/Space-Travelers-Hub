@@ -1,0 +1,31 @@
+.profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.profile-list {
+  margin-top: 2rem;
+}
+
+.profile-list h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.profile-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #575252;
+}
+
+.profile-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #575252;
+}
+
+.profile-list li:last-child {
+  border: 0;
+}
