@@ -39,6 +39,7 @@ const fetchRockets = () => (dispatch) => {
       dispatch(fetchDataSuccess(data));
     })
     .catch((error) => {
+      // eslint-disable-next-line
       alert(error.message);
     });
 };
