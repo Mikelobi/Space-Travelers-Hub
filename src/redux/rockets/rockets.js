@@ -28,9 +28,18 @@ const fetchRockets = () => (dispatch) => {
   axios
     .get(baseUrl)
     .then((response) => {
-      dispatch(fetchDataSuccess(response.data));
+      let { data } = response;
+      data = data.map((item) => ({
+        id: item.id,
+        name: item.rocket_name,
+        type: item.rocket_type,
+        flickr_images: item.flickr_images,
+        description: item.description,
+      }));
+      dispatch(fetchDataSuccess(data));
     })
     .catch((error) => {
+      // eslint-disable-next-line
       alert(error.message);
     });
 };
