@@ -4,15 +4,15 @@
 
 <p align="center">Rocket Page</p>
 
-<img src="./src/assets/Rocket.png">
+<img src="./src/assets/Rocket.PNG">
 
 <p align="center">Mission Page</p>
 
-<img src="./src/assets/Mission.png">
+<img src="./src/assets/Mission.PNG">
 
 <p align="center">Profile Page</p>
 
-<img src="./src/assets/Profile.png">
+<img src="./src/assets/Profile.PNG">
 
 <h1 align="center">Space Travelers Hub</h1>
 
