@@ -16,6 +16,7 @@ const Rocket = () => {
         name={item.name}
         description={item.description}
         image={image}
+        reserved={item.reserved}
       />
     );
   });
