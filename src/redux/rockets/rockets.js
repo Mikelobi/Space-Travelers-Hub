@@ -1,6 +1,8 @@
 import axios from 'axios';
 
 const FETCH_DATA = 'spacestore/rockets/FETCH_DATA';
+const RESERVE_ROCKET = 'spacestore/rockets/RESERVE_ROCKET';
+const CANCEL_RESERVE_ROCKET = 'spacestore/rockets/CANCEL_RESERVE_ROCKET';
 
 const initialState = {
   list: [],
@@ -13,12 +15,40 @@ const fetchDataSuccess = (data) => ({
   data,
 });
 
+const reserveRocket = (id) => ({
+  type: RESERVE_ROCKET,
+  id,
+});
+
+const cancelReserveRocket = (id) => ({
+  type: CANCEL_RESERVE_ROCKET,
+  id,
+});
+
 const rockets = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_DATA:
       return {
         list: [...state.list, ...action.data],
       };
+    case RESERVE_ROCKET: {
+      const newList = state.list.map((item) => {
+        if (item.id === action.id) return { ...item, reserved: true };
+        return item;
+      });
+      return {
+        list: newList,
+      };
+    }
+    case CANCEL_RESERVE_ROCKET: {
+      const newList = state.list.map((item) => {
+        if (item.id === action.id) return { ...item, reserved: false };
+        return item;
+      });
+      return {
+        list: newList,
+      };
+    }
     default:
       return state;
   }
@@ -35,6 +65,7 @@ const fetchRockets = () => (dispatch) => {
         type: item.rocket_type,
         flickr_images: item.flickr_images,
         description: item.description,
+        reserved: false,
       }));
       dispatch(fetchDataSuccess(data));
     })
@@ -43,6 +74,6 @@ const fetchRockets = () => (dispatch) => {
     });
 };
 
-export { fetchRockets };
+export { fetchRockets, reserveRocket, cancelReserveRocket };
 
 export default rockets;
