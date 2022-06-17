@@ -70,7 +70,7 @@ const fetchRockets = () => (dispatch) => {
       dispatch(fetchDataSuccess(data));
     })
     .catch((error) => {
-      alert(error.message);
+      alert(error.message); // eslint-disable-line
     });
 };
 
