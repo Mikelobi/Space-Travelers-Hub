@@ -1,2 +1,8 @@
-const Profile = () => <p>This is the profile page</p>;
+import ReservedRocket from '../rockets/reservedRocket';
+
+const Profile = () => (
+  <div>
+    <ReservedRocket />
+  </div>
+);
 export default Profile;
