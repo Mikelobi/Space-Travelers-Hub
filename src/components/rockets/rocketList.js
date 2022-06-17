@@ -19,13 +19,13 @@ const ListItem = ({
   let button;
   if (reserved) {
     button = (
-      <button type="button" onClick={() => cancelReserve(id)}>
+      <button type="button" onClick={() => cancelReserve(id)} className="cancel-button">
         Cancel Reservation
       </button>
     );
   } else {
     button = (
-      <button type="button" onClick={() => reserve(id)}>
+      <button type="button" onClick={() => reserve(id)} className="reserve-button">
         Reserve Reservation
       </button>
     );
