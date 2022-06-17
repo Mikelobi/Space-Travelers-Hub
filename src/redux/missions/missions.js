@@ -8,7 +8,7 @@ export default function reducer(state = initialState, action) {
   const { type, payload } = action;
   switch (type) {
     case GET_MISSIONS:
-      return [...state, ...payload.missions];
+      return payload.missions;
     case JOIN_MISSION:
       return state.map((mis) => (mis.id === action.payload.id ? { ...mis, joined: true } : mis));
     case LEAVE_MISSION:
