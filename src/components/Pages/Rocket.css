@@ -1,0 +1,23 @@
+.rocket-list {
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  padding: 1rem 0.5rem;
+}
+
+.list-item img {
+  width: 200px;
+  height: 150px;
+}
+
+.list-desc {
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.list-desc h2 {
+  padding: 0;
+  margin: 0;
+}
