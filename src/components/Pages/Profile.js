@@ -10,7 +10,7 @@ const Profile = () => (
       <JoinedMission />
     </div>
     <div className="profile-list">
-      <h2>My Missions</h2>
+      <h2>My Rockets</h2>
       <ReservedRocket />
     </div>
   </div>
