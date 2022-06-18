@@ -20,7 +20,7 @@
 
 ## Live Link 
 
-[Space Travelers](https://hilarious-swan-8bd628.netlify.app)
+[Space Travelers](https://space-hub1.netlify.app)
 
 ## Built With
 
