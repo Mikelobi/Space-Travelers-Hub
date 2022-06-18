@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the rendering of rockets display empty list of rockets 1`] = `
+<div>
+  <ul
+    class="rocket-list"
+  />
+</div>
+`;

@@ -1,62 +1,61 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+## Preview
 
-> Description the project.
+<p align="center">Rocket Page</p>
 
+<img src="./src/assets/Rocket.PNG">
+
+<p align="center">Mission Page</p>
+
+<img src="./src/assets/Mission.PNG">
+
+<p align="center">Profile Page</p>
+
+<img src="./src/assets/Profile.PNG">
+
+<h1 align="center">Space Travelers Hub</h1>
+
+> A web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.
+
+## Live Link 
+
+[Space Travelers](https://space-hub1.netlify.app)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- **REACT** and **CSS** and **Javascript**
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+To get a local copy up and running follow these setup steps below.
 
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Simply fork this project
+- run `npm i `to install all dependencies
+- run `npm run build` to bundle the project with webpack, and
+- run `npm start` to launch the application
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Authors
 
-👤 **Author1**
+👤 **Omulu Michael**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Mikelobi](https://github.com/Mikelobi)
+- Twitter: [@Mikelobi](https://twitter.com/@omulum)
+- LinkedIn: [@Mikelobi](https://linkedin.com/in/omulu)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Haji Bamsi**
+- GitHub: [@Bamsi](https://github.com/bamsi)
+- Twitter: [@Bamsi](https://twitter.com/bamsi)
+- LinkedIn: [@bamsi](https://linkedin.com/in/bamsi)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Mikelobi/space-travelers-hub/issues).
 
 ## Show your support
 
@@ -64,10 +63,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+Huge thanks to everyone who helped us in any capacity to complete this project
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
